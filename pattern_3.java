@@ -12,7 +12,7 @@ Logic->>
 ->> else print space 
 */
 
-public class z_pattern {
+public class pattern_3 {
 
     public static void main(String[] args) 
     {
