@@ -1,16 +1,14 @@
-/* Print left_triangle pattern
+/*
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * *
 
-     *
-    **
-   ***
-  ****
- ***** 
-
-Logic->> Adding n-row number of spaces
-
-*/
-public class pattern_1 {
+ */
+public class pattern_26 {
     public static void main(String[] args) {
+
         int n=5;
         for(int i=1;i<=n;i++)
         {
@@ -22,13 +20,13 @@ public class pattern_1 {
             }
             for(int j=n;j>space;j--)
             {
-                System.out.print("*");
+                System.out.print("* ");
             }
            
             System.out.println();
             
         }
-    
+        
     }
     
 }

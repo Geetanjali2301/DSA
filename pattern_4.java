@@ -14,15 +14,11 @@ public class pattern_4 {
         int n=5;
         int row,col;
 
-        for(row=0;row<n;row++)
+        for(row=n;row>=1;row--)
         {
-            for(col=n-1;col>=0;col--)
+            for(col=1;col<=row;col++)
             {
-                for(col=col-row;col>=0;col--)
-                {
-                    System.out.print("* ");
-                }
-               
+             System.out.print("* ");
             }
             System.out.println();
         }

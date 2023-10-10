@@ -16,9 +16,9 @@ public class pattern_5 {
         int n=5;
         int row,col;
 
-        for(row=0;row<n;row++)
+        for(row=1;row<=n;row++)
         {
-            for(col=0;col<n;col++)
+            for(col=1;col<=n;col++)
             {
                if(col>=row){
                 System.out.print("* ");

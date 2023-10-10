@@ -8,7 +8,6 @@ public class automorphicNum {
         {
             rem=rem*10+sq%10;
             sq/=10;
-
         }
         return rem;
     }
