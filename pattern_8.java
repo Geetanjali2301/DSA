@@ -26,6 +26,7 @@ public class pattern_8 {
     {
       System.out.print("  ");
     }
+    
     if(i>1 && i<n){
 
       System.out.print("* ");

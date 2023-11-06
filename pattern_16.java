@@ -15,7 +15,7 @@
 */
 public class pattern_16 {
     public static void main(String[] args) {
-      int n=9;
+      int n=5;
       int st=1;
       int space=4;
 
