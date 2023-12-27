@@ -1,3 +1,7 @@
+import java.util.*;
+
+//TC O(n)
+
 public class xPowern {
     public static int  power(int x,int n)
     {
@@ -10,7 +14,12 @@ public class xPowern {
 
     }
     public static void main(String[] args) {
-       System.out.println(power(5,2));
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter n: ");
+        int x=sc.nextInt();
+        System.out.println("Enter power: ");
+        int n=sc.nextInt();
+       System.out.println("The power is: "+power(x,n));
     }
     
 }
