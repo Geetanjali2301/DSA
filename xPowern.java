@@ -7,9 +7,10 @@ public class xPowern {
         }
         return x*power(x,n-1);
 
+
     }
     public static void main(String[] args) {
-       System.out.println(power(6,2)) ;
+       System.out.println(power(5,2));
     }
     
 }
