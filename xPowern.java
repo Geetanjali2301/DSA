@@ -18,7 +18,7 @@ public class xPowern {
         System.out.println("Enter n: ");
         int x=sc.nextInt();
         System.out.println("Enter power: ");
-        int n=sc.nextInt();
+        int n=sc.nextInt();a
        System.out.println("The power is: "+power(x,n));
     }
     
