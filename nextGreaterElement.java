@@ -34,9 +34,5 @@ public class nextGreaterElement {
 
     System.out.println(ans);
          
-    }
-
-    
-
-    
+    }  
 }
