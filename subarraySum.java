@@ -1,3 +1,5 @@
+//O(n^2 complexity)
+
 public class subarraySum {
     public static void main(String[] args) {
         int arr[]={1,4,0,0,3,10,5};
@@ -21,6 +23,7 @@ public class subarraySum {
                 {
                     break;
                 }
+                
                 j++;
                
                  
