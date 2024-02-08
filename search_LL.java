@@ -74,15 +74,35 @@ public class search_LL {
         return idx+1;
     }
 
+    public void reverse()
+    {
+        node prev=null;
+        node curr=tail=head;
+        node next;
+        
+        while(curr!=null)
+        {
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        head=prev;
+
+    }
+
+
     public static void main(String[] args) {
         search_LL n1=new search_LL();
         n1.insert_begin(1);
         n1.insert_begin(2);
         n1.insert_begin(3);
         n1.insert_begin(4);
+
+        n1.reverse();
         n1.display();
         //n1.search(7);
-        System.out.println("The index of node is:  "+n1.recursive_search(2, head));
+        //System.out.println("The index of node is:  "+n1.recursive_search(2, head));
 
         
 
