@@ -46,6 +46,57 @@ public class build_BST {
         inorder(root.right);
     }
 
+
+    public static node inordersuccessor(node root)
+    {
+        while(root.left!=null)
+        {
+            root=root.left;
+        }
+        return root;
+    }
+
+    public static node delete(node root,int val)
+    {
+        if(val>root.data)
+        {
+           root.right=delete(root.right, val);
+        }
+        else if(val<root.data)
+        {
+            root.left=delete(root.left,val);
+        }
+        else
+        {
+            //case 1 node is leaf node
+            if(root.left==null && root.right==null)
+            {
+                return null;
+            }
+            
+            //case 2 single child node
+
+            if(root.left==null)
+            {
+                return root.right;
+            }
+            else if(root.right==null)
+            {
+                return root.left;
+            }
+
+            //case 3 double child 
+
+            node insuc=inordersuccessor(root.right);
+            root.data=insuc.data;
+            root.right=delete(root.right,insuc.data);
+        
+        }
+        return root;
+    }
+
+    
+
     public static int search(int val,node root)
     {
         if(root==null)
@@ -78,7 +129,8 @@ public class build_BST {
             root=create_bst(root, data[i]);
 
         }
-        //inorder(root);
+
+        //searching 
         int ans=search(30, root);
         if(ans==1)
         {
@@ -87,6 +139,9 @@ public class build_BST {
         else{
             System.out.println("Key not found!");
         }
+
+        delete(root, 30);
+        inorder(root);
     }
     
 }
