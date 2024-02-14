@@ -56,6 +56,19 @@ public class operations_tree {
         return leftsum+rightsum+root.data;
 
     }
+
+    public int diameter(node root)
+    {
+        if(root==null)
+        {
+            return 0;
+        }
+        int ld=diameter(root.left);
+        int rd=diameter(root.right);
+        int lh=height(root.left);
+        int rh=height(root.right);
+        return Math.max(lh+rh+1,Math.max(ld,rd));
+    }
   
     public static void main(String[] args) {
         operations_tree t=new operations_tree();
@@ -67,6 +80,7 @@ public class operations_tree {
         System.out.println("Height of tree is: "+t.height(root));
         System.out.println("Num of nodes of tree is: "+t.count(root));
         System.out.println("Sum of nodes of tree is: "+t.sum(root));
+        System.out.println("The diameter of tree is:  "+t.diameter(root));
        
 
     }
