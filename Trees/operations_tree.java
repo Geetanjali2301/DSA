@@ -20,7 +20,7 @@ public class operations_tree {
     {
         if(root==null)
         {
-            return 0;
+            return -1;
         }
         int lh=height(root.left);
         int rh=height(root.right);
