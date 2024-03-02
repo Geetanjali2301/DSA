@@ -1,5 +1,5 @@
-
 #include<stdio.h>
+#include<stdbool.h>
 int Queue[5];
 int front=-1;
 int rear=-1;
@@ -9,14 +9,15 @@ void display();
 int main()
 {
 	int choice;
-	while(1)
+	bool f=true;
+	while(f==true)
 	{
 		printf("\nQueue operations\n");
 	     printf("1.Enqueue\n2.Dequeue\n3.Display");
 	     printf("\nEnter the Choice: ");
 	     scanf(" %d",&choice);
 		switch(choice)
-	{
+	    {
 		case 1:
 			{
 				enqueue();
@@ -35,8 +36,9 @@ int main()
 		default:
 			{
 				printf("Enter the valid choice\n");
+				f=false;
 			}
-	}
+	     }
 	}
 }
 void enqueue()

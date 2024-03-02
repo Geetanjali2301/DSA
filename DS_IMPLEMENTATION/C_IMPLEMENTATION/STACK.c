@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
+#include<stdbool.h>
 int stack[5];
 int top=-1;
 void push();
@@ -11,7 +12,8 @@ int main()
 {
 	
 	int Choice;
-	while(1)
+	bool f=true;
+	while(f==true)
 	{
 	
 	printf("\nStack operations\n");
@@ -38,6 +40,7 @@ int main()
 		default:
 			{
 				printf("Enter the valid choice\n");
+				f=false;
 			}
 	}
 }
