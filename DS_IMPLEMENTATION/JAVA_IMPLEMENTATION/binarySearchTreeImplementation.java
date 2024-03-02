@@ -1,4 +1,4 @@
-public class build_BST {
+public class binarySearchTreeImplementation {
 
     static class node{
         int data;

@@ -3,7 +3,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class traversals_Tree {
+public class treeTraversals {
 
     class node
     {
@@ -79,7 +79,7 @@ public class traversals_Tree {
         };
     
     public static void main(String[] args) {
-        traversals_Tree t=new traversals_Tree();
+        treeTraversals t=new treeTraversals();
         node root=t.new node(10);
         root.left=t.new node(20);
         root.right=t.new node(30);

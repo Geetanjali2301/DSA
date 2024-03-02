@@ -1,4 +1,4 @@
-public class operations_tree {
+public class treeOperations {
 
     class node{
         int data;
@@ -71,7 +71,7 @@ public class operations_tree {
     }
   
     public static void main(String[] args) {
-        operations_tree t=new operations_tree();
+        treeOperations t=new treeOperations();
         node root=t.new node(10);
         root.left=t.new node(20);
         root.right=t.new node(30);

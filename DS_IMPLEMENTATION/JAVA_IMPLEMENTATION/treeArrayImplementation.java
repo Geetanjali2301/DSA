@@ -1,6 +1,6 @@
 // Array implementation of the binary tree
 
-public class tree_arrayImplemntation {
+public class treeArrayImplementation {
 
     static int arr[]=new int[5];
    
@@ -66,7 +66,7 @@ public class tree_arrayImplemntation {
     }
 
     public static void main(String[] args) {
-        tree_arrayImplemntation t=new tree_arrayImplemntation();
+        treeArrayImplementation t=new treeArrayImplementation();
         
         t.add(10);
         t.add_lchild(0, 20);
