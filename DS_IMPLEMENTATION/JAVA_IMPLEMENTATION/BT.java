@@ -1,4 +1,4 @@
-public class binaryTreeImplementation {
+public class BT {
     static class treenode{
         int data;
         treenode left;
