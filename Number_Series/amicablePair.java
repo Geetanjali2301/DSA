@@ -3,7 +3,6 @@ public class amicablePair {
     public static void isPair(int n1,int n2)
     {
         int sum1=0,sum2=0;
-
         for(int i=1;i<n1;i++)
         {
             if(n1%i==0)
