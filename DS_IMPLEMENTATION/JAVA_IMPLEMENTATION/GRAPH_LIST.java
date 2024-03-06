@@ -127,7 +127,7 @@ public class GRAPH_LIST {
         while(flag){
 
             System.out.println("\nMenu: \n1]Add Edge \n2]Print Graph \n3]BFS \n4]DFS \n5]Exit");
-            System.out.println("\nEnter your chioce: ");
+            System.out.println("\nEnter your choice: ");
             int choice=sc.nextInt();
 
             switch(choice)
