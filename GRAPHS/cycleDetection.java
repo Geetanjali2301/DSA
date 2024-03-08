@@ -83,6 +83,29 @@ public class cycleDetection {
         
     }
 
+    public static boolean directed_cycle(ArrayList<edge> graph[],boolean visarr[],int curr,boolean s[])
+    {
+        visarr[curr]=true;
+        s[curr]=true;
+
+        for(int i=0;i<graph[curr].size();i++)
+        {
+            edge e=graph[curr].get(i);
+
+            if(s[e.dest])
+            {
+                return true;
+            }
+            else if(!s[e.dest] && directed_cycle(graph,visarr,e.dest,s))
+            {
+                return true;
+            }
+        }
+        s[curr]=false;
+        return false;
+
+    }
+
     public static void main(String[] args) {
 
         int v=5;
